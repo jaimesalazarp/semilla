@@ -1,11 +1,12 @@
 @extends('layouts.madre')
 
 @section('title')
-    home
+    blog
 @endsection
 
 @section('content')
-      <h1> Home</h1>
+      <h1> pagina de inicio de blog</h1>
+     
 @endsection
 
  @push('css')
@@ -15,12 +16,3 @@
         }
      </style> --}}
  @endpush 
-
-    
-
-
-
-
-
-
-
