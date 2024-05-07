@@ -1,17 +1,3 @@
-{{-- ul>li*4>a --}}
-{{-- <nav>
-    <ul>
-        <li><a href="{{ route('home')}}">Home</a></li>
-        <li><a href="{{ route('blog')}}">Blog</a></li>
-        <li><a href="{{ route('about')}}">Nosotros</a></li>
-        <li><a href="{{ route('contact')}}">Contacto</a></li>
-    </ul>
-</nav> --}}
-{{-- <svg width="10" height="10" viewbox="0 0 10 10 xmlns="http://www.w3.org/2000/svg">
-        <img src="img/logo2.png" width="50" height="50" alt="">
-       </svg> --}}
-
-
 <nav class="bg-lime-50 py-6 relative">
     <div class="container mx-auto flex px-8 xl:px-0 items-center">
 
