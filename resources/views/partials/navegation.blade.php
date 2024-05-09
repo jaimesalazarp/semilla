@@ -8,10 +8,10 @@
         <div id="menu" class="lg:flex hidden flex-grow justify-between absolute lg:relative lg:top-0 top-24 left-0 w-full lg:w-auto py-14 lg:py-0 px-8">
             <div class="flex flex-grow justify-center">
                 <ul class="flex flex-col lg:flex-row">
-                    <li class="lg:mr-4 mb-8 lg:mb-0"><a href="{{ route('home') }}"> home </a></li>
-                    <li class="lg:mr-4 mb-8 lg:mb-0"><a href=" href="{{ route('about') }}"> about </a></li>
-                    <li class="lg:mr-4 mb-8 lg:mb-0"><a href=" href="{{ route('blog') }}"> blog</a></li>
-                    <li class="lg:mr-4 mb-8 lg:mb-0"><a href=" href="{{ route('contact') }}"> contact </a></li>
+                    <li class="lg:mr-4 mb-8 lg:mb-0"><a href=" {{ route('home') }}" > home </a></li>
+                    <li class="lg:mr-4 mb-8 lg:mb-0"><a href=" {{ route('about') }}"> about </a></li>
+                    <li class="lg:mr-4 mb-8 lg:mb-0"><a href=" {{ route('blog') }}" > blog</a></li>
+                    <li class="lg:mr-4 mb-8 lg:mb-0"><a href=" {{ route('contact') }}"> contact </a></li>
                 </ul>
             </div>
             <div class="flex flex-col lg:flex-row text-center">
