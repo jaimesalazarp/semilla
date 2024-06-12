@@ -1,12 +1,12 @@
 @extends('layouts.madre')
 
 @section('title')
-    blog
+   catalogo
 @endsection
 
 @section('content')
-      <h1> pagina de inicio de blog</h1>
-     
+      <h1 class="text-center"> aca se pondra un catalogo de plantas en el banc</h1>
+    
 @endsection
 
  @push('css')

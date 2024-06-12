@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,37 @@
   <title>@yield('title')</title>
 
   <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+{{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
 
-        <!-- Styles -->
-        @livewireStyles
-    
-  {{-- contenido variable --}}     
+<!-- Styles -->
+  @livewireStyles
+  
+  {{-- contenido variable --}}
   @stack('css')
 
 </head>
+
+<nav>
+@include('partials.navegation')
+
+</nav>
+
 <body>
   <header>
-    
-    @include('partials.navegation')
+
+
+    @session('alert')
+    <div>
+      {{ $value }}
+    </div>
+    @endsession
+
   </header>
 
-    @yield('content')
+
+@yield('content')
 
   <footer></footer>
 </body>
+
 </html>
