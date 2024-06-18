@@ -10,9 +10,9 @@ class PostController extends Controller
     
     public function index()
     {
-        $posts = Post::get();
+        $posts = Post::orderBy('id','desc')->get();
 
-        return view('posts.index', ['posts' => $posts]);
+        return view('posts.index', compact('posts'));
 
     }
 
