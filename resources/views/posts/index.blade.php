@@ -8,37 +8,22 @@ blog
 
 
 <h1 class="text-center"> Aqui se mostraran todos los posts pagina de inicio de blog</h1>
-
+<div>
 <a href="{{  route('posts.create') }}"> create new post</a>
-
-<ul>
-    @foreach ($posts as $post )
-        <li>
-            <a href="{{ route('posts.show', $post->id) }}">
-                {{ $post->title }}
-            </a>
-        </li>
-    @endforeach
-</ul>
-
-
-{{-- <a href="{{  route('posts.create') }}"> create new post</a> --}}
-
-{{-- @foreach ($posts as $post )
-
-<div style="display: flex; align-items:baseline">
-
-    <h2>
-        <a href="{{ route('posts.show', $post->id)}}">
-            {{ $post->title }}
-        </a>
-    </h2> &nbsp;
-
-    <a href="{{ route('posts.edit', $post) }}">editar</a>
-
 </div>
+<dir >
 
-@endforeach --}}
+    @foreach ($posts as $post )
+        <h2>
+            <a href="{{ route('posts.show', $post->id) }}">
+                    {{ $post->title }}
+            </a> &nbsp;
+            <a href="{{ route('posts.edit', $post) }}">editar</a>
+        </h2>
+    @endforeach
+
+</dir>
+
 
 @endsection
 

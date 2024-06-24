@@ -27,7 +27,7 @@
   <header>
 
 
-    @session('alert')
+    @session('status')
     <div>
       {{ $value }}
     </div>

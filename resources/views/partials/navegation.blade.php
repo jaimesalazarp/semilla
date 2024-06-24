@@ -9,7 +9,7 @@
             class="lg:flex hidden flex-grow justify-between absolute lg:relative lg:top-0 top-24 left-0 w-full lg:w-auto py-14 lg:py-0 px-8">
             <div class="flex flex-grow justify-center">
                 <ul class="flex flex-col lg:flex-row">
-                    <li class="lg:mr-4 mb-8 lg:mb-0 py-2"><a href=" {{ route('home') }}"> Inicio </a></li>
+                    <li class="lg:mr-4 mb-8 lg:mb-0 py-2"><a href=" {{ route('home') }}"> Inicio </a></li> 
                     <li class="lg:mr-4 mb-8 lg:mb-0 py-2"><a href=" {{ route('about') }}"> Quienes Somos </a></li>
                     <li class="lg:mr-4 mb-8 lg:mb-0 py-2"><a href=" {{ route('catalogo') }}"> Catálogo</a></li>
                     <li class="lg:mr-4 mb-8 lg:mb-0 py-2"><a href=" {{ route('posts.index') }}"> Blog</a></li>
@@ -17,11 +17,11 @@
                 </ul>
             </div>
             <div class="flex flex-col lg:flex-row text-center">
-                <a href="#"
+                <a href="{{ route('login') }}"
                     class="mr-2 border border-black py-2.5 px-5 rounded-md hover:bg-white transition duration-500 ease-in-out lg:mr-4 mb-8 lg:mb-0">
                     inicio sesion
                 </a>
-                <a href="#"
+                <a href="{{ route('register') }}"
                     class="bg-blue-400 border border-blue-500 py-2.5 px-5 rounded-md hover:bg-blue-500 hover:border-blue-500 transition duration-500 ease-in-out">
                     Regístrate
                 </a>

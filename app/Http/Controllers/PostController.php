@@ -44,7 +44,7 @@ class PostController extends Controller
 
         $post->save();
 
-        session()->flash('alert', 'Post created');
+        session()->flash('status', 'Post created');
 
         return to_route('posts.index');
 
