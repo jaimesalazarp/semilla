@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,11 +18,10 @@
   @stack('css')
 
 </head>
-
-<nav>
-@include('partials.navegation')
-
-</nav>
+{{-- <div class="container mx-auto"> --}}
+  <nav>
+    @include('partials.navegation')
+  </nav>
 
 <body>
   <header>
@@ -34,11 +34,11 @@
     @endsession
 
   </header>
-
+</div>
 
 @yield('content')
 
-  <footer></footer>
+<footer></footer>
 </body>
-
+{{-- </div class="container"> --}}
 </html>
